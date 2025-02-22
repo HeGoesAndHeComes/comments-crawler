@@ -42,7 +42,7 @@ for keyword in keywords:
             
             # Blog_content = card.find("p",attrs={"node-type":"feed_list_content"},class_="txt").get_text(separator="\n").strip() # blog内容
             Blog_content = card.find("p", attrs={"node-type": "feed_list_content"}, class_="txt")
-            print(f"-------------------------------------------------------{type(Blog_content)}--------------------------------------------------")
+            print(f"---------------------------{type(Blog_content)}---------------------------")
             if Blog_content:
                 Blog_content = Blog_content.get_text(separator="\n").strip()
             else:
