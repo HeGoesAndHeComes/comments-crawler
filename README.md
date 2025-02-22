@@ -163,10 +163,10 @@ for keyword in keywords:
                     with open(f"Weibo_{keyword}_comments.txt",'a',encoding="utf-8") as file: # 将博客下的评论逐个写入txt文件
                         file.writelines(comment)
                         
-				# with open(f"Weibo_{keyword}_comments.txt",'a',encoding="utf-8") as file: # 将博客下的所有评论一次性写入txt文件
-                #         file.writelines(comment)
+		# with open(f"Weibo_{keyword}_comments.txt",'a',encoding="utf-8") as file: # 将博客下的所有评论一次性写入txt文件
+                #    file.writelines(comment)
                 
-                # 判断评论数是否增加 => 是否不在爬取新评论
+                # 判断评论数是否增加 => 是否不再爬取新评论
                 previous_count = comment_count 
                 comment_count = len(comments_list)
 				
